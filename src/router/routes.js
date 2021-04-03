@@ -1,15 +1,15 @@
 const routes = [
   {
     path: '/',
-    component: () => import('../layouts/Layout.vue'),
+    component: () => import('layouts/Layout.vue'),
     children: [
       { 
         path: '', 
-        component: () => import('../pages/PageTodo.vue') 
+        component: () => import('pages/PageTodo.vue') 
       },
       { 
         path: '/settings', 
-        component: () => import('../pages/pageSettings.vue') 
+        component: () => import('pages/pageSettings.vue') 
       }
     ]
   }
